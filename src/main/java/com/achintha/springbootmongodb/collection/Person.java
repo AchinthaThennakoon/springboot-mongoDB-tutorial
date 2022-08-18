@@ -15,11 +15,11 @@ import java.util.List;
 public class Person {
 
     @Id
-    private String Id;
+    private String id;
     private String firstName;
     private String lastName;
     private Integer age;
     private List<String> hobbies;
-    private List<Address> addresses;
+    //private List<Address> addresses;
     
 }
