@@ -21,7 +21,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public List<Person> getPersonStartWith(String name) {
-        return null;
+        return personRepository.findByFirstNameStartsWith(name);
     }
 
 }
