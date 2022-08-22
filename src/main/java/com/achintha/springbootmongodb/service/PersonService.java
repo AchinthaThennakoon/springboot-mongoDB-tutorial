@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface PersonService {
 
-    public String save(Person person);
+    String save(Person person);
 
     List<Person> getPersonStartWith(String name);
+
+    void deleteUser(String id);
 }

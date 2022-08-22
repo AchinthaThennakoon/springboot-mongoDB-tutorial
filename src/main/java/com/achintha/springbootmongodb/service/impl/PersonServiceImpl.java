@@ -24,4 +24,9 @@ public class PersonServiceImpl implements PersonService {
         return personRepository.findByFirstNameStartsWith(name);
     }
 
+    @Override
+    public void deleteUser(String id) {
+        personRepository.deleteById(id);
+    }
+
 }

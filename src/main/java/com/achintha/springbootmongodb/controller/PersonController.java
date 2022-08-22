@@ -24,4 +24,9 @@ public class PersonController {
         return personService.getPersonStartWith(name);
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable String id){
+        personService.deleteUser(id);
+    }
+
 }
