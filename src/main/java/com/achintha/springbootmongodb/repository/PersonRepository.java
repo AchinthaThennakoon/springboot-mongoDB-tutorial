@@ -11,4 +11,5 @@ public interface PersonRepository extends MongoRepository<Person,String> {
     //define the implementation
     List<Person> findByFirstNameStartsWith(String name);
 
+    List<Person> findByAgeBetween(Integer minAge,Integer maxAge);
 }

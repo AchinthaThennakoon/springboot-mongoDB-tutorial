@@ -29,4 +29,10 @@ public class PersonController {
         personService.deleteUser(id);
     }
 
+    @GetMapping("/age")
+    public List<Person> getPersonByAge(@RequestParam Integer minAge,
+                                       @RequestParam Integer maxAge){
+        return personService.getPersonByAge(minAge,maxAge);
+    }
+
 }
