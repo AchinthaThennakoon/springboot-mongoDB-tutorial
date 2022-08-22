@@ -6,6 +6,8 @@ import com.achintha.springbootmongodb.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PersonServiceImpl implements PersonService {
 
@@ -15,6 +17,11 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public String save(Person person) {
         return personRepository.save(person).getId();
+    }
+
+    @Override
+    public List<Person> getPersonStartWith(String name) {
+        return null;
     }
 
 }
